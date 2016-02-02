@@ -1,0 +1,63 @@
+body {
+  color: #486ac5;
+  background-color: #FFFFFF;
+  font-family: monospace;
+  font-size: 15px;
+}
+body #introduction {
+  margin: 200px auto 200px auto;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  max-width: 600px;
+}
+body #project-list {
+  margin: 100px auto 100px auto;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+body #project-list .project-link-wrapper {
+  display: inline-block;
+  text-decoration: none;
+}
+body #project-list .project-link-wrapper .project-picture {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 20px 20px 100px 20px;
+}
+body #project-list .project-link-wrapper .project-description-wrapper {
+  position: absolute;
+  height: 70px;
+  width: 200px;
+  left: 20px;
+  top: -20px;
+  margin-top: -86px;
+  position: relative;
+  display: none;
+  z-index: 2;
+}
+body #project-list .project-link-wrapper .project-description-wrapper .arrow-up {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #486ac5;
+}
+body #project-list .project-link-wrapper .project-description-wrapper .project-description {
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  color: #FFFFFF;
+  background-color: #486ac5;
+}
+body #project-list .project-link-wrapper:hover .project-description-wrapper {
+  display: block;
+}
+body #project-list .project-link-wrapper:hover .project-picture {
+  background-position: 0px -100px !important;
+}
