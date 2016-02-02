@@ -19,22 +19,23 @@ body #project-list {
 body #project-list .project-link-wrapper {
   display: inline-block;
   text-decoration: none;
+  height: 240px;
+  width: 240px;
 }
 body #project-list .project-link-wrapper .project-picture {
   display: inline-block;
   width: 200px;
   height: 100px;
-  margin: 20px 20px 100px 20px;
+  margin: 20px 20px 0px 20px;
 }
 body #project-list .project-link-wrapper .project-description-wrapper {
-  position: absolute;
-  height: 70px;
   width: 200px;
-  left: 20px;
-  top: -20px;
-  margin-top: -86px;
-  position: relative;
+  height: 100%;
+  max-height: 100px;
+  margin-left: 20px;
+  position: absolute;
   display: none;
+  overflow: hidden;
   z-index: 2;
 }
 body #project-list .project-link-wrapper .project-description-wrapper .arrow-up {
@@ -42,7 +43,7 @@ body #project-list .project-link-wrapper .project-description-wrapper .arrow-up 
   top: 0px;
   left: 50%;
   margin-left: -5px;
-  margin-top: -10px;
+  margin-top: 5px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
