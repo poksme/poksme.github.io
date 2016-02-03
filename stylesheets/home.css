@@ -52,6 +52,7 @@ body #project-list .project-link-wrapper .project-description-wrapper .arrow-up 
 }
 body #project-list .project-link-wrapper .project-description-wrapper .project-description {
   text-align: left;
+  font-size: 11px;
   padding: 20px 20px 20px 20px;
   color: #FFFFFF;
   background-color: #486ac5;
