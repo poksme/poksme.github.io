@@ -8,7 +8,6 @@ body #introduction {
   margin: 200px auto 200px auto;
   padding: 0px 10px 0px 10px;
   width: 100%;
-  max-width: 600px;
 }
 body #project-list {
   margin: 100px auto 100px auto;
@@ -22,10 +21,11 @@ body #project-list .project-link-wrapper {
   height: 240px;
   width: 240px;
 }
-body #project-list .project-link-wrapper .project-picture {
+body #project-list .project-link-wrapper .project-title-picture {
   display: inline-block;
   width: 200px;
   height: 100px;
+  background-size: 200px 200px;
   margin: 20px 20px 0px 20px;
 }
 body #project-list .project-link-wrapper .project-description-wrapper {
@@ -60,6 +60,6 @@ body #project-list .project-link-wrapper .project-description-wrapper .project-d
 body #project-list .project-link-wrapper:hover .project-description-wrapper {
   display: block;
 }
-body #project-list .project-link-wrapper:hover .project-picture {
+body #project-list .project-link-wrapper:hover .project-title-picture {
   background-position: 0px -100px !important;
 }
