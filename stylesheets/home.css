@@ -170,7 +170,7 @@ body #project-list .contact-link-wrapper .contact-description-wrapper .arrow-up,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .arrow-up,
 body #contact-list .contact-link-wrapper .contact-description-wrapper .arrow-up {
   position: absolute;
-  top: 0px;
+  top: 1px;
   left: 50%;
   margin-left: -3.5px;
   margin-top: 3.5px;
