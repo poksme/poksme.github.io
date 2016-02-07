@@ -1,0 +1,65 @@
+body {
+  margin: 0px 0px 0px 0px;
+  color: #486ac5;
+  background-color: #FFFFFF;
+  font-family: monospace;
+  font-size: 15px;
+}
+body .header,
+body .footer {
+  padding: 40px;
+}
+body a,
+body a:visited {
+  color: #486ac5;
+}
+body .home-link {
+  float: left;
+}
+body .next-link {
+  float: right;
+}
+body .content {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 40px auto;
+}
+body .content blockquote {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-style: italic;
+  border: 1px solid #486ac5;
+  padding: 20px 20px 20px 20px;
+}
+body .content blockquote p {
+  margin: 0px 0px 0px 0px;
+}
+body .content table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+}
+body .content table th {
+  border-bottom: 1px solid #486ac5;
+}
+body .content table td,
+body .content table th {
+  padding: 10px;
+}
+body .content table tr td:first-child {
+  width: 120px;
+  font-weight: bold;
+}
+body .content table tr th:last-child {
+  font-weight: normal;
+}
+body .content iframe {
+  display: block;
+  margin: 40px auto 40px auto;
+}
+@media only screen and (max-width: 640px) {
+  body .content iframe {
+    margin-left: -7.5%;
+    width: 115%;
+  }
+}
