@@ -1,9 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 body {
   margin: 0px 0px 0px 0px;
   color: #486ac5;
   background-color: #FFFFFF;
   font-family: monospace;
   font-size: 15px;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+body a,
+body a:visited {
+  color: #486ac5;
+}
+body b {
+  font-weight: 600;
 }
 body #introduction {
   margin: 200px auto 200px auto;
@@ -54,6 +67,9 @@ body #contact-list .technology-link-wrapper .technology-title-picture,
 body #project-list .contact-link-wrapper .technology-title-picture,
 body #technology-list .contact-link-wrapper .technology-title-picture,
 body #contact-list .contact-link-wrapper .technology-title-picture {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
   display: inline-block;
   margin: 0px 5px 0px 5px;
   width: 100px;
@@ -69,11 +85,14 @@ body #contact-list .technology-link-wrapper .contact-title-picture,
 body #project-list .contact-link-wrapper .contact-title-picture,
 body #technology-list .contact-link-wrapper .contact-title-picture,
 body #contact-list .contact-link-wrapper .contact-title-picture {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
   display: inline-block;
   margin: 0px 5px 0px 5px;
   width: 100px;
-  height: 100px;
-  background-size: 100px 200px;
+  height: 150px;
+  background-size: 100px 300px;
 }
 body #project-list .project-link-wrapper .project-description-wrapper,
 body #technology-list .project-link-wrapper .project-description-wrapper,
@@ -261,7 +280,6 @@ body #contact-list .technology-link-wrapper .contact-description-wrapper .contac
 body #project-list .contact-link-wrapper .contact-description-wrapper .contact-description,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .contact-description,
 body #contact-list .contact-link-wrapper .contact-description-wrapper .contact-description {
-  text-align: left;
   font-size: 11px;
   padding: 20px 20px 20px 20px;
   color: #FFFFFF;
@@ -349,7 +367,7 @@ body #contact-introduction {
 .no-touchevents body #project-list .contact-link-wrapper:hover .contact-title-picture,
 .no-touchevents body #technology-list .contact-link-wrapper:hover .contact-title-picture,
 .no-touchevents body #contact-list .contact-link-wrapper:hover .contact-title-picture {
-  background-position: 0px -100px !important;
+  background-position: 0px -150px !important;
 }
 .touchevents body #project-list .project-link-wrapper,
 .touchevents body #technology-list .project-link-wrapper,

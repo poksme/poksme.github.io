@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600);
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0px 0px 0px 0px;
   color: #486ac5;
@@ -5,9 +10,48 @@ body {
   font-family: monospace;
   font-size: 15px;
 }
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+body b {
+  font-weight: 600;
+}
+body .header {
+  margin-bottom: 380px;
+}
+body .title {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-top: 0px;
+  margin-left: -300px;
+  clip: rect(0px, 600px, 300px, 0px);
+}
+body .footer {
+  bottom: 0px;
+}
 body .header,
 body .footer {
-  padding: 40px;
+  width: 100%;
+  background-color: #486ac5;
+  height: 50px;
+}
+body .header a,
+body .footer a,
+body .header a:visited,
+body .footer a:visited {
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 50px;
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+body .header a:hover,
+body .footer a:hover,
+body .header a:visited:hover,
+body .footer a:visited:hover {
+  text-decoration: underline;
 }
 body a,
 body a:visited {
@@ -24,11 +68,26 @@ body .content {
   max-width: 900px;
   margin: 40px auto 40px auto;
 }
+body .content h2 {
+  margin-top: 30px;
+}
+body .content img {
+  margin-bottom: 10px;
+}
+body .content .float-left {
+  float: left;
+  margin-right: 10px;
+}
+body .content .float-right {
+  float: right;
+  margin-left: 10px;
+}
 body .content blockquote {
+  width: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   font-style: italic;
-  border: 1px solid #486ac5;
+  border-left: 1px solid #486ac5;
   padding: 20px 20px 20px 20px;
 }
 body .content blockquote p {
@@ -39,12 +98,9 @@ body .content table {
   margin-bottom: 40px;
   border-collapse: collapse;
 }
-body .content table th {
-  border-bottom: 1px solid #486ac5;
-}
 body .content table td,
 body .content table th {
-  padding: 10px;
+  padding: 5px;
 }
 body .content table tr td:first-child {
   width: 120px;
@@ -53,13 +109,42 @@ body .content table tr td:first-child {
 body .content table tr th:last-child {
   font-weight: normal;
 }
-body .content iframe {
+body .content .video {
   display: block;
   margin: 40px auto 40px auto;
 }
 @media only screen and (max-width: 640px) {
-  body .content iframe {
+  body .header {
+    margin-bottom: 250px;
+  }
+  body .title {
+    transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    -webkit-transform: scale(0.75, 0.75);
+    top: 0px;
+    margin-top: 0px;
+  }
+  body .content .video {
     margin-left: -7.5%;
+    width: 115%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .header {
+    margin-bottom: 200px;
+  }
+  body .title {
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    top: -60px;
+    margin-top: 0px;
+  }
+  body .content .float-left,
+  body .content .float-right,
+  body .content .title {
+    margin-left: -7.5%;
+    float: none;
     width: 115%;
   }
 }
