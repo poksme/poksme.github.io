@@ -20,13 +20,20 @@ body b {
 body .header {
   margin-bottom: 380px;
 }
+body .highlightedTitle,
 body .title {
   position: absolute;
   left: 50%;
   top: 100px;
-  margin-top: 0px;
   margin-left: -300px;
+}
+body .title {
+  margin-top: 0px;
   clip: rect(0px, 600px, 300px, 0px);
+}
+body .highlightedTitle {
+  margin-top: -300px;
+  clip: rect(300px, 600px, 600px, 0px);
 }
 body .footer {
   bottom: 0px;
@@ -117,12 +124,17 @@ body .content .video {
   body .header {
     margin-bottom: 250px;
   }
+  body .highlightedTitle,
   body .title {
     transform: scale(0.75, 0.75);
     -ms-transform: scale(0.75, 0.75);
     -webkit-transform: scale(0.75, 0.75);
+  }
+  body .title {
     top: 0px;
-    margin-top: 0px;
+  }
+  body .highlightedTitle {
+    margin-top: -300px;
   }
   body .content .video {
     margin-left: -7.5%;
@@ -133,12 +145,17 @@ body .content .video {
   body .header {
     margin-bottom: 200px;
   }
+  body .highlightedTitle,
   body .title {
     transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
+  }
+  body .title {
     top: -60px;
-    margin-top: 0px;
+  }
+  body .highlightedTitle {
+    margin-top: -320px;
   }
   body .content .float-left,
   body .content .float-right,
