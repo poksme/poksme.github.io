@@ -89,6 +89,9 @@ body .content .float-right {
   float: right;
   margin-left: 10px;
 }
+body .content .full-width {
+  width: 100%;
+}
 body .content blockquote {
   width: auto;
   margin-top: 40px;

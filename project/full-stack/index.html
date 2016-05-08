@@ -19,13 +19,13 @@
   <body>
     <div class="header"><a href="/" class="home-link">Home</a><a href="/project/pastavoid" class="next-link">Pastavoid ></a></div><img src="/assets/full-stack-title-600.png" class="highlightedTitle">
     <div class="content"><blockquote>
-<p>This page is currently under developement. What you see or read here may not be final.</p>
+<p>This page is currently under development. What you see or read here may not be final.</p>
 </blockquote>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">Project</th>
-<th style="text-align:left">Freelancer</th>
+<th style="text-align:left">Full Stack Development</th>
 </tr>
 </thead>
 <tbody>
@@ -47,14 +47,38 @@
 </tr>
 <tr>
 <td style="text-align:left">Language</td>
-<td style="text-align:left">Javascript (ES5 &amp; ES6)</td>
+<td style="text-align:left">Javascript (ES5 &amp; ES6), Less (CSS), Jade (HTML)</td>
 </tr>
 <tr>
 <td style="text-align:left">Framework</td>
 <td style="text-align:left">KeystoneJs (Mongoose, ExpressJs &amp; NodeJs)</td>
 </tr>
+<tr>
+<td style="text-align:left">Tools</td>
+<td style="text-align:left">GulpJs, Google Docs, Inkscape</td>
+</tr>
+<tr>
+<td style="text-align:left">Design Pattern</td>
+<td style="text-align:left">Model View Controller, Facade (API)</td>
+</tr>
 </tbody>
 </table>
+<blockquote>
+<p>This project page will showcase the workflow I adopted when developing websites as a full stack developer.</p>
+<p>This will not focus on any website in particular.</p>
+</blockquote>
+<h2 id="single-code-base">Single Code Base</h2>
+<p>As a Full Stack developer, Javascript allows me to use one unified code base. From the development side, through the server side and to the client side all the scripting is made in Javascript. I will showcase the code architecture I would you use for a website that shows articles on an home page.</p>
+<p><img class="full-width" alt="A diagram of the typical code base." src="/assets/code-flow.png"></p>
+<p>As shown on this diagram there is 3 different stages:</p>
+<ul>
+<li><strong>Development</strong> - The files are not processed, they are versioned on Git and javascript files use the last features of ES6.</li>
+<li><strong>Server</strong> - The files have been processed and are pushed to the server, javascript files have been type checked (Flow) and transpiled to ES5.</li>
+<li><strong>Client</strong> - The files have been statically served or dynamically generated, if the website is in production most of the files have been minified.</li>
+</ul>
+<h2 id="multiple-micro-services">Multiple Micro Services</h2>
+<p>The Architecture I designed relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
+<p><img class="full-width" alt="The game is shown playing at speed 8x" src="/assets/micro-services.png"></p>
 
     </div>
     <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/pastavoid" class="next-link">Pastavoid ></a></div>
