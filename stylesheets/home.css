@@ -307,6 +307,15 @@ body #contact-introduction {
   width: 90%;
   margin: 80px auto -40px auto;
 }
+body #footer {
+  background-color: #486ac5;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  bottom: 0px;
+  margin-bottom: -15px;
+  padding: 30px 30px 30px 30px;
+}
 .no-touchevents body #project-list .project-link-wrapper:hover .project-description-wrapper,
 .no-touchevents body #technology-list .project-link-wrapper:hover .project-description-wrapper,
 .no-touchevents body #contact-list .project-link-wrapper:hover .project-description-wrapper,
