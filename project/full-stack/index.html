@@ -61,6 +61,10 @@
 <td style="text-align:left">Design Pattern</td>
 <td style="text-align:left">Model View Controller, Facade (API)</td>
 </tr>
+<tr>
+<td style="text-align:left">Year</td>
+<td style="text-align:left">2015 - 2016</td>
+</tr>
 </tbody>
 </table>
 <blockquote>
@@ -77,8 +81,19 @@
 <li><strong>Client</strong> - The files have been statically served or dynamically generated, if the website is in production most of the files have been minified.</li>
 </ul>
 <h2 id="multiple-micro-services">Multiple Micro Services</h2>
-<p>The Architecture I designed relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
+<p>This Architecture relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
 <p><img class="full-width" alt="The game is shown playing at speed 8x" src="/assets/micro-services.png"></p>
+<p>One of the key of this architecture is to logically distribute roles between micro-services.</p>
+<ul>
+<li><strong>DNS</strong> - DNSimple</li>
+<li><strong>Mail</strong> - Google Apps for Work</li>
+<li><strong>Server</strong> - Heroku</li>
+<li><strong>Database</strong> - MLab (formerly MongoLab)</li>
+<li><strong>Log</strong> - PaperTrail</li>
+<li><strong>NewsLetter</strong> - MailChimp</li>
+<li><strong>Content</strong> - Cloudinary</li>
+<li><strong>Code</strong> - GitHub</li>
+</ul>
 
     </div>
     <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/pastavoid" class="next-link">Pastavoid ></a></div>
