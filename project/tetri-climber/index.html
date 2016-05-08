@@ -18,10 +18,7 @@
   </head>
   <body>
     <div class="header"><a href="/" class="home-link">Home</a><a href="/project/friendly-quiz" class="next-link">Friendly Quiz ></a></div><img src="/assets/tetri-climber-title-600.png" class="title">
-    <div class="content"><blockquote>
-<p>This page is currently under developement. What you see or read here may not be final.</p>
-</blockquote>
-<table>
+    <div class="content"><table>
 <thead>
 <tr>
 <th style="text-align:left">Project</th>
@@ -51,7 +48,11 @@
 </tr>
 <tr>
 <td style="text-align:left">Framework</td>
-<td style="text-align:left">XNA</td>
+<td style="text-align:left">XNA &amp; Surface SDK</td>
+</tr>
+<tr>
+<td style="text-align:left">Tools</td>
+<td style="text-align:left">Inkscape, GitHub &amp; Google Docs</td>
 </tr>
 <tr>
 <td style="text-align:left">Year</td>
@@ -61,7 +62,7 @@
 </table>
 <h2 id="gameplay">GamePlay</h2>
 <p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/accelerated-gameplay.gif">
-The gameplay is based on Tetris with one simple addition: <em>Climby</em>. This round character is moving on the board and you have to take him as high as possible using tetrominoes. <em>Climby</em> movements are highly predictable, follows 6 simple rules :</p>
+The gameplay is based on Tetris with one simple addition: <em>Climby</em>. This round character is moving on the board and the goal is to take him as high as possible using tetrominoes. <em>Climby</em> movements are highly predictable, he follows 6 simple rules:</p>
 <ul>
 <li><em>Climby</em> never stops rolling</li>
 <li>If <em>Climby</em> comes accross the border of the board he turns around</li>
@@ -71,16 +72,16 @@ The gameplay is based on Tetris with one simple addition: <em>Climby</em>. This 
 <li>If <em>Climby</em> comes accross a one block tall obstacle he climbs  </li>
 </ul>
 <p>The higher <em>Climby</em> climbs, the higher your score will be on the leaderboard.</p>
-<p>The player is controlling the tetrominoes falling from the top of the board using touch gesture similar to <a href="http://www.ea.com/tetris">EA&#39;s Tetris</a> on mobile phone. <em>Climby</em>&#39;s rolling speed depends on the board height (the higher the faster) and also on the left &amp; right direction buttons which appear on both sides of the board.</p>
+<p>The player is controlling the tetrominoes falling from the top of the board using touch gestures similar to <a href="http://www.ea.com/tetris">EA&#39;s Tetris</a> on mobile phone. <em>Climby</em>&#39;s rolling speed depends on the board height (the higher the faster) and also on the left &amp; right directional buttons which appear on both sides of the board.</p>
 <h2 id="two-players">Two Players</h2>
 <p><img class="float-left" alt="An animation showing two players compete" src="/assets/two-players.gif">
-TetriClimber being developed for Microsoft&#39;s PixelSense (formerly Surface) the player has plenty of room on the screen. There is so much space that we could fit two boards. This way, two players can compete side by side. This layout was inspired by both <a href="/assets/cocktail.jpg">cocktail cabinet</a> and <a href="/assets/astrocity.jpg">2 players cabinet</a>.</p>
-<p>Two player mode is a score race. But in order to spice up the gameplay, there is only one pair of direction buttons. The left player can only use the left button and the right player can only use the right button. This means that you can mess with your opponent timing but you should be aware that your climby speed will depend on your opponent button.</p>
+TetriClimber being developed for <a href="/assets/samsung-pixelsense.jpg">Microsoft&#39;s PixelSense</a> (formerly Surface) the player has plenty of room on the screen. There is so much space that we could fit two boards. This way, two players can compete side by side. This layout was inspired by both <a href="/assets/cocktail.jpg">cocktail cabinet</a> and <a href="/assets/astrocity.jpg">2 players cabinet</a>.</p>
+<p>Two player mode is a score race. But in order to spice up the gameplay we have put only one pair of directional buttons. The left player can only use the left button and the right player can only use the right button. This means that you can mess with your opponent timing but be aware that both buttons control both climby.</p>
 <p>It&#39;s a double-edged sword!</p>
 <h2 id="object-recognition">Object Recognition</h2>
 <p><img class="float-right" alt="An animation showing the object recognition feature" src="/assets/object-recognition.gif">
-Microsoft&#39;s PixelSense has built-in infrared sensors that can recognize shapes and hand parts. We decided to use this feature to break the wall between the player and the game.</p>
-<p>The player will be able to use physical tetrominoes that will be recognized by the game when put on the screen. The next tetromino to fall will match the printed shape. This is a powerful feature that can be used only once for each shape.   </p>
+Microsoft&#39;s PixelSense has built-in infrared sensors which can recognize object shapes and hand parts. We decided to use this feature to break the wall between the player and the game.</p>
+<p>The player will be able to use physical tetrominoes made of cardboard that will be recognized by the game when laid on the screen. The next tetromino to fall in the game will match the printed shape. This is a powerful feature that can be used only once for each shape.   </p>
 <h2 id="trailer">Trailer</h2>
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UxaD-8QeYJc" frameborder="0" allowfullscreen></iframe>
 
