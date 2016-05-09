@@ -81,6 +81,15 @@ body .content h2 {
 body .content img {
   margin-bottom: 10px;
 }
+body .content .gallery-wrapper {
+  text-align: center;
+}
+body .content .float-left,
+body .content .float-right,
+body .content .gallery {
+  max-height: 400px;
+  max-width: 400px;
+}
 body .content .float-left {
   float: left;
   margin-right: 10px;
@@ -143,6 +152,12 @@ body .content .video {
     margin-left: -7.5%;
     width: 115%;
   }
+  body .content .gallery {
+    margin-left: -7.5%;
+    width: 115%;
+    max-width: none;
+    max-height: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   body .header {
@@ -160,11 +175,14 @@ body .content .video {
   body .highlightedTitle {
     margin-top: -320px;
   }
+  body .content .gallery,
   body .content .float-left,
   body .content .float-right,
   body .content .title {
     margin-left: -7.5%;
     float: none;
     width: 115%;
+    max-width: none;
+    max-height: none;
   }
 }
