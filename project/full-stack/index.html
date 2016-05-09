@@ -64,16 +64,16 @@
 <p>This project page showcases the workflow I designed when developing websites as a full stack developer. It does not focus on any website in particular.</p>
 </blockquote>
 <h2 id="single-code-base">Single Code Base</h2>
-<p>As a Full Stack developer, Javascript allows me to use one unified code base. From the development side, through the server side and to the client side all the scripting is made in Javascript. I will showcase the code architecture I would have use for a website that shows articles (Model) on a page named <em>Home</em> (View).</p>
+<p>As a Full Stack developer, Javascript allows me to use one unified code base. From the development side, through the server side and to the client side all the scripting is made in Javascript. I will showcase the code architecture I would use for a website that shows articles (Model) on a page named <em>Home</em> (View).</p>
 <p><img class="full-width" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/code-flow.png"></p>
-<p>As shown on this diagram there is 3 different stages:</p>
+<p>As shown on this diagram we can divide the files into 3 different stages:</p>
 <ul>
 <li><strong>Development</strong> - The files are not processed, they are versioned on Git and javascript files use the newest features of ES6.</li>
 <li><strong>Server</strong> - The files have been processed and are pushed to the server, javascript files have been type checked (Flow) and transpiled to ES5.</li>
 <li><strong>Client</strong> - The files have been statically served or dynamically generated, if the website is in production most of the files have been minified.</li>
 </ul>
 <h2 id="multiple-micro-services">Multiple Micro-Services</h2>
-<p>This Architecture relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
+<p>The architecture presented before relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
 <p><img class="full-width" alt="The game is shown playing at speed 8x" src="/assets/micro-services.png"></p>
 <p>The key of this architecture is to logically distribute roles between micro-services.</p>
 <ul>

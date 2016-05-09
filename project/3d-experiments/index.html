@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon-precomposed" href="/assets/favicons/favicon-57.png">
     <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32">
     <title>3D Experiments by Bertrand Boustany</title>
-    <meta name="description" content="Various experimental Websites taking advantage of 3d in the browser">
+    <meta name="description" content="Various experimental Websites displaying 3D scenes in the browser">
   </head>
   <body>
     <div class="header"><a href="/" class="home-link">Home</a><a href="/project/tetri-climber" class="next-link">TetriClimber ></a></div><img src="/assets/3d-experiments-title-600.png" class="title">
@@ -29,6 +29,10 @@
 <tr>
 <td style="text-align:left">Type</td>
 <td style="text-align:left">Suite of 3D Experiments in the browser</td>
+</tr>
+<tr>
+<td style="text-align:left">Platform</td>
+<td style="text-align:left">Web Browser</td>
 </tr>
 <tr>
 <td style="text-align:left">Team</td>
@@ -62,7 +66,7 @@
 </table>
 <h2 id="point-clouds">Point Clouds</h2>
 <p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/kinect-1.gif">
-My first steps with 3D in the browser was with Kinect. I used a Python server to process and send the depth data through web sockets. On the client side, a javascript and three.js script is displaying the data as a point cloud.</p>
+My first steps with 3D in the browser was with Kinect. I used a Python server to process and send the depth data to the client through web sockets. The browser would run a three.js script to display the data as a point cloud.</p>
 <p>The animation you see on the right is my earliest working prototype, from there I added features like:</p>
 <ul>
 <li>Midi support</li>
@@ -79,18 +83,18 @@ My first steps with 3D in the browser was with Kinect. I used a Python server to
 <p><img class="float-left" alt="The game is shown playing at speed 8x" src="/assets/deadlock.gif"></p>
 <p>In an attempt to get to know browser side scripting and 3D better, I started creating my own 3D engine in vanilla Javascript (without the use of any external library).</p>
 <p>I had to implement a game loop, a timer and my first and only 3D element: a cube. Additional text is rendered block by block using a map for each letter.</p>
-<p>The result is this 3D rotating cube (left) using sin and cos waves.</p>
+<p>The result is this 3D rotating cube using sin and cos waves.</p>
 <h2 id="game-boy-shader">Game Boy Shader</h2>
 <p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/dmg-shader.gif"></p>
 <p>When starting to learn about shaders I had one project in mind. Following <a href="/project/pyxel">Pyxel&#39;s</a> legacy, I wanted to create the look and feel of the original <em>Game Boy</em> using 3D elements.</p>
-<p>My first was done with Unity shaders and a <a href="/assets/box-modeling.png">3d modeled Game Boy made with 3D Studio Max</a>.  </p>
+<p>The first version was done with Unity shaders and a <a href="/assets/box-modeling.png">3d modeled Game Boy made with 3D Studio Max</a>.  </p>
 <p>In order to have a convincing effect I had to combine 3 different shaders:</p>
 <ul>
-<li><strong>Silhouette Outline</strong> (Vertex Shader) - To emulate the style of pixel art found on <em>Game Boy</em> I had to add an extra thick border to the 3d model in order to make it pop out.</li>
+<li><strong>Silhouette Outline</strong> (Vertex Shader) - To emulate the style of pixel art found on <em>Game Boy</em> I had to add an extra thick border to the 3d model to make it pop out.</li>
 <li><strong>Pixelate</strong> (Pixel Shader) - This effect is straight forward, the <em>Game Boy</em> screen being really low definition I had to pixelate the scene.</li>
-<li><strong>Color change</strong> (pixel Shader) - This aims at limiting the colors of the screen to the 4 available shades of green on <em>Game Boy</em>.</li>
+<li><strong>Color change</strong> (pixel Shader) - This aims at limiting the colors on the screen to the 4 available shades of green on <em>Game Boy</em>.</li>
 </ul>
-<p>The result is this rotating Game Boy (shown on right).</p>
+<p>The result is this rotating Game Boy.</p>
 <p>This Unity shader has been edited to work with ThreeJs and is currently live on <a href="http://poks.me/">poks.me</a>.</p>
 <h2 id="video-jaying-example-midi-tap-tempo-">Video Jaying Example (Midi Tap Tempo)</h2>
 <iframe class="video" src="https://vine.co/v/eruXrTrAXH2/embed/simple" width="600" height="600" frameborder="0"></iframe>
