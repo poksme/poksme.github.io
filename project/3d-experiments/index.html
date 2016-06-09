@@ -14,10 +14,14 @@
     <link rel="apple-touch-icon-precomposed" href="/assets/favicons/favicon-57.png">
     <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32">
     <title>3D Experiments by Bertrand Boustany</title>
-    <meta name="description" content="Various experimental Websites displaying 3D scenes in the browser">
+    <meta name="description" content="Various experimental Websites taking advantage of 3d in the browser">
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("3342787875");
+    </script>
   </head>
   <body>
-    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/tetri-climber" class="next-link">TetriClimber ></a></div><img src="/assets/3d-experiments-title-600.png" class="title">
+    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/wildcat-attack" class="next-link">Wildcat Attack ></a></div><img src="/assets/3d-experiments-title-600.png" class="title">
     <div class="content"><table>
 <thead>
 <tr>
@@ -62,10 +66,14 @@
 <td style="text-align:left">Year</td>
 <td style="text-align:left">2013 ~ 2015</td>
 </tr>
+<tr>
+<td style="text-align:left">Repository</td>
+<td style="text-align:left"><a href="https://github.com/poksme/DeadLock">github.com/poksme/DeadLock</a> &amp; other private repositories</td>
+</tr>
 </tbody>
 </table>
 <h2 id="point-clouds">Point Clouds</h2>
-<p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/kinect-1.gif">
+<p><a href="/assets/kinect-1.gif"><img class="float-right" alt="Point Cloud Kinect animation." src="/assets/kinect-1.gif"></a>
 My first steps with 3D in the browser was with Kinect. I used a Python server to process and send the depth data to the client through web sockets. The browser would run a three.js script to display the data as a point cloud.</p>
 <p>This animation is my earliest working prototype, from there I added features like:</p>
 <ul>
@@ -80,12 +88,12 @@ My first steps with 3D in the browser was with Kinect. I used a Python server to
 </ul>
 <p>With all these features I was able to use this script as a Video Jaying tool. You can find a demonstration video at the bottom of this page.</p>
 <h2 id="homemade-3d-engine">Homemade 3D Engine</h2>
-<p><img class="float-left" alt="The game is shown playing at speed 8x" src="/assets/deadlock.gif"></p>
+<p><a href="/assets/deadlock.gif"><img class="float-left" alt="An animation of a cube rotating around Deadlock text." src="/assets/deadlock.gif"></a></p>
 <p>In an attempt to get to know browser side scripting and 3D better, I started creating my own 3D engine in vanilla Javascript (without the use of any external library).</p>
 <p>I had to implement a game loop, a timer and my first and only 3D element: a cube. Additional text is rendered block by block using a map for each letter.</p>
 <p>The result is this 3D rotating cube using sin and cos waves.</p>
 <h2 id="game-boy-shader">Game Boy Shader</h2>
-<p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/dmg-shader.gif"></p>
+<p><a href="/assets/dmg-shader.gif"><img class="float-right" alt="A 3d modeled GameBoy with a GameBoy shader rotating." src="/assets/dmg-shader.gif"></a></p>
 <p>When starting to learn about shaders I had one project in mind. Following <a href="/project/pyxel">Pyxel&#39;s</a> legacy, I wanted to create the look and feel of the original <em>Game Boy</em> using 3D elements.</p>
 <p>The first version was done with Unity shaders and a <a href="/assets/box-modeling.png">3d modeled Game Boy made with 3D Studio Max</a>.  </p>
 <p>In order to have a convincing effect I had to combine 3 different shaders:</p>
@@ -100,13 +108,13 @@ My first steps with 3D in the browser was with Kinect. I used a Python server to
 <p><iframe class="video" src="https://vine.co/v/eruXrTrAXH2/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
 <h2 id="kinect-point-cloud-gallery">Kinect Point Cloud Gallery</h2>
 <div class="gallery-wrapper">
-<img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/square1.gif">
-<img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/square2.gif">
-<img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/point-cloud.gif">
-<img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/hi.gif">
+<a href="/assets/3d/square1.gif"><img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/square1.gif"></a>
+<a href="/assets/3d/square2.gif"><img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/square2.gif"></a>
+<a href="/assets/3d/point-cloud.gif"><img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/point-cloud.gif"></a>
+<a href="/assets/3d/hi.gif"><img class="gallery" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/3d/hi.gif"></a>
 </div>
 
     </div>
-    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/tetri-climber" class="next-link">TetriClimber ></a></div>
+    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/wildcat-attack" class="next-link">Wildcat Attack ></a></div>
   </body>
 </html>

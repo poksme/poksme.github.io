@@ -15,9 +15,13 @@
     <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32">
     <title>Full Stack Development by Bertrand Boustany</title>
     <meta name="description" content="My workflow as a professional full stack web developer">
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("3342787875");
+    </script>
   </head>
   <body>
-    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/friendly-quiz" class="next-link">Friendly Quiz ></a></div><img src="/assets/full-stack-title-600.png" class="highlightedTitle">
+    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/pastavoid" class="next-link">Pastavoid ></a></div><img src="/assets/full-stack-title-600.png" class="highlightedTitle">
     <div class="content"><table>
 <thead>
 <tr>
@@ -58,6 +62,10 @@
 <td style="text-align:left">Year</td>
 <td style="text-align:left">2015 ~ 2016</td>
 </tr>
+<tr>
+<td style="text-align:left">Repository</td>
+<td style="text-align:left">Private</td>
+</tr>
 </tbody>
 </table>
 <blockquote>
@@ -65,7 +73,7 @@
 </blockquote>
 <h2 id="single-code-base">Single Code Base</h2>
 <p>As a Full Stack developer, Javascript allows me to use one unified code base. From the development side, through the server side and to the client side all the scripting is made in Javascript. I will showcase the code architecture I would use for a website that shows articles (Model) on a page named <em>Home</em> (View).</p>
-<p><img class="full-width" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/code-flow.png"></p>
+<p><a href="/assets/code-flow.png"><img class="full-width" alt="A diagram of the three stages of the code: Development, Server & Client" src="/assets/code-flow.png"></a></p>
 <p>As shown on this diagram we can divide the files into 3 different stages:</p>
 <ul>
 <li><strong>Development</strong> - The files are not processed, they are versioned on Git and javascript files use the newest features of ES6.</li>
@@ -74,7 +82,7 @@
 </ul>
 <h2 id="multiple-micro-services">Multiple Micro-Services</h2>
 <p>The architecture presented before relies on the use of multiple micro-services. When in development stage the files are versioned on <em>GitHub</em>, then, when in server stage files are deployed from <em>GitHub</em> to <em>Heroku</em> which becomes the center of gravity of the micro-services.</p>
-<p><img class="full-width" alt="The game is shown playing at speed 8x" src="/assets/micro-services.png"></p>
+<p><a href="/assets/micro-services.png"><img class="full-width" alt="The game is shown playing at speed 8x" src="/assets/micro-services.png"></a></p>
 <p>The key of this architecture is to logically distribute roles between micro-services.</p>
 <ul>
 <li><strong>DNSimple</strong> - DNS management and load balancing.</li>
@@ -89,6 +97,6 @@
 <p>The double benefit of the scalability of this architecture is to be able to scale up or down as you go. The fees being gradual you should only pay what your application needs.  </p>
 
     </div>
-    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/friendly-quiz" class="next-link">Friendly Quiz ></a></div>
+    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/pastavoid" class="next-link">Pastavoid ></a></div>
   </body>
 </html>

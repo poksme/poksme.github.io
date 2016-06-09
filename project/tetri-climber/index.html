@@ -15,9 +15,13 @@
     <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32">
     <title>TetriClimber by Bertrand Boustany</title>
     <meta name="description" content="A puzzle Game on PixelSense presented as an Epitech Bachelor Project (France)">
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("3342787875");
+    </script>
   </head>
   <body>
-    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/full-stack" class="next-link">Full Stack Development ></a></div><img src="/assets/tetri-climber-title-600.png" class="title">
+    <div class="header"><a href="/" class="home-link">Home</a><a href="/project/friendly-quiz" class="next-link">Friendly Quiz ></a></div><img src="/assets/tetri-climber-title-600.png" class="title">
     <div class="content"><table>
 <thead>
 <tr>
@@ -70,10 +74,14 @@
 <td style="text-align:left">Year</td>
 <td style="text-align:left">2013</td>
 </tr>
+<tr>
+<td style="text-align:left">Repository</td>
+<td style="text-align:left"><a href="https://github.com/poksme/TetriClimber">github.com/poksme/TetriClimber</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="gameplay">GamePlay</h2>
-<p><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/accelerated-gameplay.gif">
+<p><a href="/assets/accelerated-gameplay.gif"><img class="float-right" alt="The game is shown playing at speed 8x" src="/assets/accelerated-gameplay.gif"></a>
 TetriClimber&#39;s gameplay is based on Tetris with one simple addition: <em>Climby</em>. This round character is moving on the board, the goal is to take him as high as possible using tetrominoes. <em>Climby</em> movements are highly predictable, he follows 6 simple rules:</p>
 <ul>
 <li><em>Climby</em> never stops rolling</li>
@@ -86,18 +94,18 @@ TetriClimber&#39;s gameplay is based on Tetris with one simple addition: <em>Cli
 <p>The higher <em>Climby</em> climbs, the higher your score will be on the leaderboard.</p>
 <p>The player is controlling the tetrominoes falling from the top of the board using touch gestures similar to <a href="http://www.ea.com/tetris">EA&#39;s Tetris</a> on mobile phone. <em>Climby</em>&#39;s rolling speed depends on the board height (the higher the faster) and also on the left &amp; right directional (displayed on both sides of the board).</p>
 <h2 id="two-players">Two Players</h2>
-<p><img class="float-left" alt="An animation showing two players compete" src="/assets/two-players.gif">
+<p><a href="/assets/two-players.gif"><img class="float-left" alt="An animation showing two players compete" src="/assets/two-players.gif"></a>
 TetriClimber being developed for <a href="/assets/samsung-pixelsense.jpg">Microsoft&#39;s PixelSense</a> (formerly Surface) the player has plenty of room on the screen. There is so much space that we could fit two boards. This way, two players can compete side by side. This layout was inspired by both <a href="/assets/cocktail.jpg">cocktail cabinet</a> and <a href="/assets/astrocity.jpg">2 players cabinet</a>.</p>
 <p>Two player mode is a score race. But in order to spice up the gameplay we have put only one pair of directional buttons. The left player can only use the left button and the right player can only use the right button. This means that you can mess with your opponent timing but be aware that both buttons control both climby.</p>
 <p>It&#39;s a double-edged sword!</p>
 <h2 id="object-recognition">Object Recognition</h2>
-<p><img class="float-right" alt="An animation showing the object recognition feature" src="/assets/object-recognition.gif">
+<p><a href="/assets/object-recognition.gif"><img class="float-right" alt="An animation showing the object recognition feature" src="/assets/object-recognition.gif"></a>
 Microsoft&#39;s PixelSense has built-in infrared sensors which can recognize object shapes and hand parts. We decided to use this feature to break the wall between the player and the game.</p>
 <p>The player will be able to use physical tetrominoes made of cardboard that will be recognized by the game when laid on the screen. The next tetromino to fall in the game will match the printed shape. This is a powerful feature that can only be used once for each shape.   </p>
 <h2 id="trailer">Trailer</h2>
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UxaD-8QeYJc" frameborder="0" allowfullscreen></iframe>
 
     </div>
-    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/full-stack" class="next-link">Full Stack Development ></a></div>
+    <div class="footer"><a href="/" class="home-link">Home</a><a href="/project/friendly-quiz" class="next-link">Friendly Quiz ></a></div>
   </body>
 </html>
