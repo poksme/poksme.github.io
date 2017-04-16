@@ -25,7 +25,8 @@ body #introduction {
 }
 body #project-list,
 body #technology-list,
-body #contact-list {
+body #contact-list,
+body #timeline-list {
   margin: 100px auto 40px auto;
   max-width: 1000px;
   text-align: center;
@@ -33,12 +34,15 @@ body #contact-list {
 body #project-list .project-link-wrapper,
 body #technology-list .project-link-wrapper,
 body #contact-list .project-link-wrapper,
+body #timeline-list .project-link-wrapper,
 body #project-list .technology-link-wrapper,
 body #technology-list .technology-link-wrapper,
 body #contact-list .technology-link-wrapper,
+body #timeline-list .technology-link-wrapper,
 body #project-list .contact-link-wrapper,
 body #technology-list .contact-link-wrapper,
-body #contact-list .contact-link-wrapper {
+body #contact-list .contact-link-wrapper,
+body #timeline-list .contact-link-wrapper {
   display: inline-block;
   text-decoration: none;
   height: 240px;
@@ -46,12 +50,15 @@ body #contact-list .contact-link-wrapper {
 body #project-list .project-link-wrapper .project-title-picture,
 body #technology-list .project-link-wrapper .project-title-picture,
 body #contact-list .project-link-wrapper .project-title-picture,
+body #timeline-list .project-link-wrapper .project-title-picture,
 body #project-list .technology-link-wrapper .project-title-picture,
 body #technology-list .technology-link-wrapper .project-title-picture,
 body #contact-list .technology-link-wrapper .project-title-picture,
+body #timeline-list .technology-link-wrapper .project-title-picture,
 body #project-list .contact-link-wrapper .project-title-picture,
 body #technology-list .contact-link-wrapper .project-title-picture,
-body #contact-list .contact-link-wrapper .project-title-picture {
+body #contact-list .contact-link-wrapper .project-title-picture,
+body #timeline-list .contact-link-wrapper .project-title-picture {
   display: inline-block;
   margin: 20px 20px 0px 20px;
   width: 200px;
@@ -61,12 +68,15 @@ body #contact-list .contact-link-wrapper .project-title-picture {
 body #project-list .project-link-wrapper .technology-title-picture,
 body #technology-list .project-link-wrapper .technology-title-picture,
 body #contact-list .project-link-wrapper .technology-title-picture,
+body #timeline-list .project-link-wrapper .technology-title-picture,
 body #project-list .technology-link-wrapper .technology-title-picture,
 body #technology-list .technology-link-wrapper .technology-title-picture,
 body #contact-list .technology-link-wrapper .technology-title-picture,
+body #timeline-list .technology-link-wrapper .technology-title-picture,
 body #project-list .contact-link-wrapper .technology-title-picture,
 body #technology-list .contact-link-wrapper .technology-title-picture,
-body #contact-list .contact-link-wrapper .technology-title-picture {
+body #contact-list .contact-link-wrapper .technology-title-picture,
+body #timeline-list .contact-link-wrapper .technology-title-picture {
   font-size: 25px;
   font-weight: 300;
   line-height: 40px;
@@ -79,12 +89,15 @@ body #contact-list .contact-link-wrapper .technology-title-picture {
 body #project-list .project-link-wrapper .contact-title-picture,
 body #technology-list .project-link-wrapper .contact-title-picture,
 body #contact-list .project-link-wrapper .contact-title-picture,
+body #timeline-list .project-link-wrapper .contact-title-picture,
 body #project-list .technology-link-wrapper .contact-title-picture,
 body #technology-list .technology-link-wrapper .contact-title-picture,
 body #contact-list .technology-link-wrapper .contact-title-picture,
+body #timeline-list .technology-link-wrapper .contact-title-picture,
 body #project-list .contact-link-wrapper .contact-title-picture,
 body #technology-list .contact-link-wrapper .contact-title-picture,
-body #contact-list .contact-link-wrapper .contact-title-picture {
+body #contact-list .contact-link-wrapper .contact-title-picture,
+body #timeline-list .contact-link-wrapper .contact-title-picture {
   font-size: 25px;
   font-weight: 300;
   line-height: 40px;
@@ -97,63 +110,81 @@ body #contact-list .contact-link-wrapper .contact-title-picture {
 body #project-list .project-link-wrapper .project-description-wrapper,
 body #technology-list .project-link-wrapper .project-description-wrapper,
 body #contact-list .project-link-wrapper .project-description-wrapper,
+body #timeline-list .project-link-wrapper .project-description-wrapper,
 body #project-list .technology-link-wrapper .project-description-wrapper,
 body #technology-list .technology-link-wrapper .project-description-wrapper,
 body #contact-list .technology-link-wrapper .project-description-wrapper,
+body #timeline-list .technology-link-wrapper .project-description-wrapper,
 body #project-list .contact-link-wrapper .project-description-wrapper,
 body #technology-list .contact-link-wrapper .project-description-wrapper,
-body #contact-list .contact-link-wrapper .project-description-wrapper {
+body #contact-list .contact-link-wrapper .project-description-wrapper,
+body #timeline-list .contact-link-wrapper .project-description-wrapper {
   width: 200px;
   margin-left: 20px;
 }
 body #project-list .project-link-wrapper .technology-description-wrapper,
 body #technology-list .project-link-wrapper .technology-description-wrapper,
 body #contact-list .project-link-wrapper .technology-description-wrapper,
+body #timeline-list .project-link-wrapper .technology-description-wrapper,
 body #project-list .technology-link-wrapper .technology-description-wrapper,
 body #technology-list .technology-link-wrapper .technology-description-wrapper,
 body #contact-list .technology-link-wrapper .technology-description-wrapper,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper,
 body #project-list .contact-link-wrapper .technology-description-wrapper,
 body #technology-list .contact-link-wrapper .technology-description-wrapper,
 body #contact-list .contact-link-wrapper .technology-description-wrapper,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper,
 body #project-list .project-link-wrapper .contact-description-wrapper,
 body #technology-list .project-link-wrapper .contact-description-wrapper,
 body #contact-list .project-link-wrapper .contact-description-wrapper,
+body #timeline-list .project-link-wrapper .contact-description-wrapper,
 body #project-list .technology-link-wrapper .contact-description-wrapper,
 body #technology-list .technology-link-wrapper .contact-description-wrapper,
 body #contact-list .technology-link-wrapper .contact-description-wrapper,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper,
 body #project-list .contact-link-wrapper .contact-description-wrapper,
 body #technology-list .contact-link-wrapper .contact-description-wrapper,
-body #contact-list .contact-link-wrapper .contact-description-wrapper {
+body #contact-list .contact-link-wrapper .contact-description-wrapper,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper {
   width: 180px;
   margin-left: -40px;
 }
 body #project-list .project-link-wrapper .project-description-wrapper,
 body #technology-list .project-link-wrapper .project-description-wrapper,
 body #contact-list .project-link-wrapper .project-description-wrapper,
+body #timeline-list .project-link-wrapper .project-description-wrapper,
 body #project-list .technology-link-wrapper .project-description-wrapper,
 body #technology-list .technology-link-wrapper .project-description-wrapper,
 body #contact-list .technology-link-wrapper .project-description-wrapper,
+body #timeline-list .technology-link-wrapper .project-description-wrapper,
 body #project-list .contact-link-wrapper .project-description-wrapper,
 body #technology-list .contact-link-wrapper .project-description-wrapper,
 body #contact-list .contact-link-wrapper .project-description-wrapper,
+body #timeline-list .contact-link-wrapper .project-description-wrapper,
 body #project-list .project-link-wrapper .technology-description-wrapper,
 body #technology-list .project-link-wrapper .technology-description-wrapper,
 body #contact-list .project-link-wrapper .technology-description-wrapper,
+body #timeline-list .project-link-wrapper .technology-description-wrapper,
 body #project-list .technology-link-wrapper .technology-description-wrapper,
 body #technology-list .technology-link-wrapper .technology-description-wrapper,
 body #contact-list .technology-link-wrapper .technology-description-wrapper,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper,
 body #project-list .contact-link-wrapper .technology-description-wrapper,
 body #technology-list .contact-link-wrapper .technology-description-wrapper,
 body #contact-list .contact-link-wrapper .technology-description-wrapper,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper,
 body #project-list .project-link-wrapper .contact-description-wrapper,
 body #technology-list .project-link-wrapper .contact-description-wrapper,
 body #contact-list .project-link-wrapper .contact-description-wrapper,
+body #timeline-list .project-link-wrapper .contact-description-wrapper,
 body #project-list .technology-link-wrapper .contact-description-wrapper,
 body #technology-list .technology-link-wrapper .contact-description-wrapper,
 body #contact-list .technology-link-wrapper .contact-description-wrapper,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper,
 body #project-list .contact-link-wrapper .contact-description-wrapper,
 body #technology-list .contact-link-wrapper .contact-description-wrapper,
-body #contact-list .contact-link-wrapper .contact-description-wrapper {
+body #contact-list .contact-link-wrapper .contact-description-wrapper,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper {
   height: 100%;
   max-height: 100px;
   position: absolute;
@@ -164,30 +195,39 @@ body #contact-list .contact-link-wrapper .contact-description-wrapper {
 body #project-list .project-link-wrapper .project-description-wrapper .arrow-up,
 body #technology-list .project-link-wrapper .project-description-wrapper .arrow-up,
 body #contact-list .project-link-wrapper .project-description-wrapper .arrow-up,
+body #timeline-list .project-link-wrapper .project-description-wrapper .arrow-up,
 body #project-list .technology-link-wrapper .project-description-wrapper .arrow-up,
 body #technology-list .technology-link-wrapper .project-description-wrapper .arrow-up,
 body #contact-list .technology-link-wrapper .project-description-wrapper .arrow-up,
+body #timeline-list .technology-link-wrapper .project-description-wrapper .arrow-up,
 body #project-list .contact-link-wrapper .project-description-wrapper .arrow-up,
 body #technology-list .contact-link-wrapper .project-description-wrapper .arrow-up,
 body #contact-list .contact-link-wrapper .project-description-wrapper .arrow-up,
+body #timeline-list .contact-link-wrapper .project-description-wrapper .arrow-up,
 body #project-list .project-link-wrapper .technology-description-wrapper .arrow-up,
 body #technology-list .project-link-wrapper .technology-description-wrapper .arrow-up,
 body #contact-list .project-link-wrapper .technology-description-wrapper .arrow-up,
+body #timeline-list .project-link-wrapper .technology-description-wrapper .arrow-up,
 body #project-list .technology-link-wrapper .technology-description-wrapper .arrow-up,
 body #technology-list .technology-link-wrapper .technology-description-wrapper .arrow-up,
 body #contact-list .technology-link-wrapper .technology-description-wrapper .arrow-up,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper .arrow-up,
 body #project-list .contact-link-wrapper .technology-description-wrapper .arrow-up,
 body #technology-list .contact-link-wrapper .technology-description-wrapper .arrow-up,
 body #contact-list .contact-link-wrapper .technology-description-wrapper .arrow-up,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper .arrow-up,
 body #project-list .project-link-wrapper .contact-description-wrapper .arrow-up,
 body #technology-list .project-link-wrapper .contact-description-wrapper .arrow-up,
 body #contact-list .project-link-wrapper .contact-description-wrapper .arrow-up,
+body #timeline-list .project-link-wrapper .contact-description-wrapper .arrow-up,
 body #project-list .technology-link-wrapper .contact-description-wrapper .arrow-up,
 body #technology-list .technology-link-wrapper .contact-description-wrapper .arrow-up,
 body #contact-list .technology-link-wrapper .contact-description-wrapper .arrow-up,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper .arrow-up,
 body #project-list .contact-link-wrapper .contact-description-wrapper .arrow-up,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .arrow-up,
-body #contact-list .contact-link-wrapper .contact-description-wrapper .arrow-up {
+body #contact-list .contact-link-wrapper .contact-description-wrapper .arrow-up,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper .arrow-up {
   position: absolute;
   top: 1px;
   left: 50%;
@@ -202,84 +242,111 @@ body #contact-list .contact-link-wrapper .contact-description-wrapper .arrow-up 
 body #project-list .project-link-wrapper .project-description-wrapper .project-description,
 body #technology-list .project-link-wrapper .project-description-wrapper .project-description,
 body #contact-list .project-link-wrapper .project-description-wrapper .project-description,
+body #timeline-list .project-link-wrapper .project-description-wrapper .project-description,
 body #project-list .technology-link-wrapper .project-description-wrapper .project-description,
 body #technology-list .technology-link-wrapper .project-description-wrapper .project-description,
 body #contact-list .technology-link-wrapper .project-description-wrapper .project-description,
+body #timeline-list .technology-link-wrapper .project-description-wrapper .project-description,
 body #project-list .contact-link-wrapper .project-description-wrapper .project-description,
 body #technology-list .contact-link-wrapper .project-description-wrapper .project-description,
 body #contact-list .contact-link-wrapper .project-description-wrapper .project-description,
+body #timeline-list .contact-link-wrapper .project-description-wrapper .project-description,
 body #project-list .project-link-wrapper .technology-description-wrapper .project-description,
 body #technology-list .project-link-wrapper .technology-description-wrapper .project-description,
 body #contact-list .project-link-wrapper .technology-description-wrapper .project-description,
+body #timeline-list .project-link-wrapper .technology-description-wrapper .project-description,
 body #project-list .technology-link-wrapper .technology-description-wrapper .project-description,
 body #technology-list .technology-link-wrapper .technology-description-wrapper .project-description,
 body #contact-list .technology-link-wrapper .technology-description-wrapper .project-description,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper .project-description,
 body #project-list .contact-link-wrapper .technology-description-wrapper .project-description,
 body #technology-list .contact-link-wrapper .technology-description-wrapper .project-description,
 body #contact-list .contact-link-wrapper .technology-description-wrapper .project-description,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper .project-description,
 body #project-list .project-link-wrapper .contact-description-wrapper .project-description,
 body #technology-list .project-link-wrapper .contact-description-wrapper .project-description,
 body #contact-list .project-link-wrapper .contact-description-wrapper .project-description,
+body #timeline-list .project-link-wrapper .contact-description-wrapper .project-description,
 body #project-list .technology-link-wrapper .contact-description-wrapper .project-description,
 body #technology-list .technology-link-wrapper .contact-description-wrapper .project-description,
 body #contact-list .technology-link-wrapper .contact-description-wrapper .project-description,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper .project-description,
 body #project-list .contact-link-wrapper .contact-description-wrapper .project-description,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .project-description,
 body #contact-list .contact-link-wrapper .contact-description-wrapper .project-description,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper .project-description,
 body #project-list .project-link-wrapper .project-description-wrapper .technology-description,
 body #technology-list .project-link-wrapper .project-description-wrapper .technology-description,
 body #contact-list .project-link-wrapper .project-description-wrapper .technology-description,
+body #timeline-list .project-link-wrapper .project-description-wrapper .technology-description,
 body #project-list .technology-link-wrapper .project-description-wrapper .technology-description,
 body #technology-list .technology-link-wrapper .project-description-wrapper .technology-description,
 body #contact-list .technology-link-wrapper .project-description-wrapper .technology-description,
+body #timeline-list .technology-link-wrapper .project-description-wrapper .technology-description,
 body #project-list .contact-link-wrapper .project-description-wrapper .technology-description,
 body #technology-list .contact-link-wrapper .project-description-wrapper .technology-description,
 body #contact-list .contact-link-wrapper .project-description-wrapper .technology-description,
+body #timeline-list .contact-link-wrapper .project-description-wrapper .technology-description,
 body #project-list .project-link-wrapper .technology-description-wrapper .technology-description,
 body #technology-list .project-link-wrapper .technology-description-wrapper .technology-description,
 body #contact-list .project-link-wrapper .technology-description-wrapper .technology-description,
+body #timeline-list .project-link-wrapper .technology-description-wrapper .technology-description,
 body #project-list .technology-link-wrapper .technology-description-wrapper .technology-description,
 body #technology-list .technology-link-wrapper .technology-description-wrapper .technology-description,
 body #contact-list .technology-link-wrapper .technology-description-wrapper .technology-description,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper .technology-description,
 body #project-list .contact-link-wrapper .technology-description-wrapper .technology-description,
 body #technology-list .contact-link-wrapper .technology-description-wrapper .technology-description,
 body #contact-list .contact-link-wrapper .technology-description-wrapper .technology-description,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper .technology-description,
 body #project-list .project-link-wrapper .contact-description-wrapper .technology-description,
 body #technology-list .project-link-wrapper .contact-description-wrapper .technology-description,
 body #contact-list .project-link-wrapper .contact-description-wrapper .technology-description,
+body #timeline-list .project-link-wrapper .contact-description-wrapper .technology-description,
 body #project-list .technology-link-wrapper .contact-description-wrapper .technology-description,
 body #technology-list .technology-link-wrapper .contact-description-wrapper .technology-description,
 body #contact-list .technology-link-wrapper .contact-description-wrapper .technology-description,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper .technology-description,
 body #project-list .contact-link-wrapper .contact-description-wrapper .technology-description,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .technology-description,
 body #contact-list .contact-link-wrapper .contact-description-wrapper .technology-description,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper .technology-description,
 body #project-list .project-link-wrapper .project-description-wrapper .contact-description,
 body #technology-list .project-link-wrapper .project-description-wrapper .contact-description,
 body #contact-list .project-link-wrapper .project-description-wrapper .contact-description,
+body #timeline-list .project-link-wrapper .project-description-wrapper .contact-description,
 body #project-list .technology-link-wrapper .project-description-wrapper .contact-description,
 body #technology-list .technology-link-wrapper .project-description-wrapper .contact-description,
 body #contact-list .technology-link-wrapper .project-description-wrapper .contact-description,
+body #timeline-list .technology-link-wrapper .project-description-wrapper .contact-description,
 body #project-list .contact-link-wrapper .project-description-wrapper .contact-description,
 body #technology-list .contact-link-wrapper .project-description-wrapper .contact-description,
 body #contact-list .contact-link-wrapper .project-description-wrapper .contact-description,
+body #timeline-list .contact-link-wrapper .project-description-wrapper .contact-description,
 body #project-list .project-link-wrapper .technology-description-wrapper .contact-description,
 body #technology-list .project-link-wrapper .technology-description-wrapper .contact-description,
 body #contact-list .project-link-wrapper .technology-description-wrapper .contact-description,
+body #timeline-list .project-link-wrapper .technology-description-wrapper .contact-description,
 body #project-list .technology-link-wrapper .technology-description-wrapper .contact-description,
 body #technology-list .technology-link-wrapper .technology-description-wrapper .contact-description,
 body #contact-list .technology-link-wrapper .technology-description-wrapper .contact-description,
+body #timeline-list .technology-link-wrapper .technology-description-wrapper .contact-description,
 body #project-list .contact-link-wrapper .technology-description-wrapper .contact-description,
 body #technology-list .contact-link-wrapper .technology-description-wrapper .contact-description,
 body #contact-list .contact-link-wrapper .technology-description-wrapper .contact-description,
+body #timeline-list .contact-link-wrapper .technology-description-wrapper .contact-description,
 body #project-list .project-link-wrapper .contact-description-wrapper .contact-description,
 body #technology-list .project-link-wrapper .contact-description-wrapper .contact-description,
 body #contact-list .project-link-wrapper .contact-description-wrapper .contact-description,
+body #timeline-list .project-link-wrapper .contact-description-wrapper .contact-description,
 body #project-list .technology-link-wrapper .contact-description-wrapper .contact-description,
 body #technology-list .technology-link-wrapper .contact-description-wrapper .contact-description,
 body #contact-list .technology-link-wrapper .contact-description-wrapper .contact-description,
+body #timeline-list .technology-link-wrapper .contact-description-wrapper .contact-description,
 body #project-list .contact-link-wrapper .contact-description-wrapper .contact-description,
 body #technology-list .contact-link-wrapper .contact-description-wrapper .contact-description,
-body #contact-list .contact-link-wrapper .contact-description-wrapper .contact-description {
+body #contact-list .contact-link-wrapper .contact-description-wrapper .contact-description,
+body #timeline-list .contact-link-wrapper .contact-description-wrapper .contact-description {
   font-size: 11px;
   padding: 20px 20px 20px 20px;
   color: #FFFFFF;
@@ -298,11 +365,16 @@ body #technology-introduction {
   margin: 80px auto -40px auto;
 }
 body #technology-list,
-body #contact-list {
+body #contact-list,
+body #timeline-list {
   width: 90%;
   max-width: 940px;
 }
-body #contact-introduction {
+body #timeline-list {
+  margin-bottom: 100px;
+}
+body #contact-introduction,
+body #timeline-introduction {
   text-align: center;
   width: 90%;
   margin: 80px auto -40px auto;
